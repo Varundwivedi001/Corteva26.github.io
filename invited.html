@@ -1,757 +1,203 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-
 <meta charset="utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-
-
-
-
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Invited Speakers</title>
 
-<script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Bootstrap -->
 <link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<style>h1 {font-size: 34px;}
-       h1.title {font-size: 38px;}
-       h2 {font-size: 30px;}
-       h3 {font-size: 24px;}
-       h4 {font-size: 18px;}
-       h5 {font-size: 16px;}
-       h6 {font-size: 12px;}
-       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
-       pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
-
-
-
-
-
-
-
-
-
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
-}
-pre code {
-  padding: 0;
-}
-</style>
-
-
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark the anchor link active (and if it's in a dropdown, also mark that active)
-  var dropdown = menuAnchor.closest('li.dropdown');
-  if (window.bootstrap) { // Bootstrap 4+
-    menuAnchor.addClass('active');
-    dropdown.find('> .dropdown-toggle').addClass('active');
-  } else { // Bootstrap 3
-    menuAnchor.parent().addClass('active');
-    dropdown.addClass('active');
-  }
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
-
-<!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
-<!-- code folding -->
-
-
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-.tocify-subheader {
-  display: inline;
-}
-.tocify-subheader .tocify-item {
-  font-size: 0.95em;
-}
-
-</style>
-
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
-
-
-
-
-<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">MU Plant Research Symposium</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Participate
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="https://forms.gle/oL37icRkNzguQohx7">Register</a>
-    </li>
-    <li>
-      <a href="https://missouri.qualtrics.com/jfe/form/SV_9Ty8yITjCCzEm0e">Abstract Submission</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    2026 Edition
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="./program.html">Program at a glance</a>
-    </li>
-    <li>
-      <a href="./invited.html">Invited Speakers</a>
-    </li>
-    <li>
-      <a href="./Lightning Talks.html">Lightning Talks</a>
-    </li>
-  </ul>
-</li>
-<li>
-  <a href="./sponsors.html">Sponsors</a>
-</li>
-<li>
-  <a href="./contact.html">Organizing Committee</a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="https:github.com/Varundwivedi001/Corteva-2026">
-    <span class="fa fa-github fa-lg"></span>
-     
-  </a>
-</li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
-<div id="header">
-
-
-
-<h1 class="title toc-ignore">Invited Speakers</h1>
-
-</div>
-
-
-<div id="Bing Yang, PhD" class="section level1">
-<h1>Bing Yang, PhD </h1>
-<p><img src="yang.jpg" /></p>
-<p><strong>University of Missouri, Donald Danforth Plant Science Center</strong></p>
-<p><strong>Talk title: </strong>Advancements in Genetic Toolkits for Plants and Their Applications</p>
-<p>Dr. Bing Yang is the Curators’ Distinguished Professor at the University of Missouri - Columbia, and a member and Principal Investigator at Donald Danforth Plant Science Center in St. Louis. He received PhD degree in plant pathology at Kansas State University. Yang’s research areas include developing and applying gene editing tool kits for basic understanding of disease biology of crops, as well as for genetically engineering of crop plants with improved traits. Specifically, his group has developed a suite of tool sets for high-efficiency genome editing in crop plants such as rice, maize, wheat, sorghum and soybean. His research also focuses on basic understanding of host susceptibility/resistance to bacterial infection and using genome editing tools to engineer disease resistant rice varieties.</p>
-<p><br /><br /><br /></p>
-</div>
-<div id="Lauren Brzozowski, PhD" class="section level1">
-<h1>Lauren Brzozowski, PhD</h1>
-<p><img src="brzozowski.jpg" /></p>
-<p><strong>University of Kentucky</strong></p>
-<p><strong>Talk title: </strong>Breeding Nutritious and Resilient Small Grains for the Mid-South</p>
-<p>Dr. Lauren Brzozowski is an Assistant Professor of Molecular Plant Breeding & Genomics at University of Kentucky. She began her position at University of Kentucky in 2022, after completing her Ph.D. and postdoctoral work at Cornell University. Her research program focuses on understanding the genetic basis of climate resilience traits, like resistance to biotic and abiotic stresses, as well as traits contributing to human nutrition. She also breeds new regionally adapted varieties of winter oats and other small grains for Kentucky farmers, leveraging genomic tools to accelerate breeding progress.</p>
-<p><br /><br /><br /></p>
-</div>
-<div id="James Schnable, PhD" class="section level1">
-<h1>James Schnable, PhD</h1>
-<p><img src="schnable.jpg" /></p>
-<p><strong>University of Nebraska-Lincoln</strong></p>
-<p><strong>Talk title: </strong>Functional Genomics via Field-scale Transcriptomics</p>
-<p>Dr. James Schnable is the Nebraska Corn Checkoff Presidential Chair at the University of Nebraska-Lincoln. His research focuses on integrating new technologies and capabilities from engineering, computer science, and statistics into the study of maize and sorghum. James has also founded three companies in the fields of bioinformatics, climate resilient agriculture, and precision agronomy, translating scientific discovery into real-world impact. He is the recipient of the 2026 NAS Prize in Food and Agriculture Sciences for pioneering breakthroughs in plant genomics and quantitative genetics.</p>
-<p><br /><br /><br /></p>
-</div>
-<div id="Prashant Sonawane, PhD" class="section level1">
-<h1>Prashant Sonawane, PhD</h1>
-<p><img src="Sonawane.jpg" /></p>
-<p><strong>University of Missouri</strong></p>
-<p><strong>Talk title: </strong>Harnessing Plant Biosynthesis and Metabolic Diversity for Novel Pharmaceutical and Agronomical Applications</p>
-<p>Dr. Prashant Sonawane is an Assistant Professor in the Department of Biochemistry, CAFNR, at the University of Missouri. Dr. Sonawane joined the Mizzou in August 2024. Dr. Sonawane's research group (Plant Metabolism Lab) is focused on exploring the spectacular chemical diversity of specialized (secondary) molecules produced by plants and using synthetic biology and metabolic engineering platforms to pioneer applications in human health, nutrition, medicine and agriculture. 
-<p><br /><br /><br /></p>
-</div>
-<div id="Maryam Rahmati Ishka, PhD" class="section level1">
-<h1>Maryam Rahmati Ishka, PhD</h1>
-<p><img src="rahmati.jpg" style="width:40%;"/></p>
-<p><strong>Eastern Illinois University</strong></p>
-<p><strong>Talk title: </strong>Decoding the Genetics of Plant Response to Developmental and Environmental Cues</p>
-<p> Dr. Maryam Rahmati Ishka has been an Assistant professor at the Department of Biological Sciences at Eastern Illinois University since August 2025. Her lab’s research focus is on decoding the genetic elements of plant response to developmental and environmental cues, revealing how plants adapt across all developmental scales. The overarching goal of Dr. Ishka’s research is to understand, identify, and translate the genetic mechanisms of plants' plasticity. Dr. Ishka has received several honors, including the 2023 Sahyadri Outstanding Postdoctoral Fellow Award and the 2025 American Society of Plant Biologists Women’s Young Investigator Award. </p>
-<p><br /><br /><br /></p>
-</div>
-<div id="Justin Gerke, PhD" class="section level1">
-<h1>Justin Gerke, PhD</h1>
-<p><img src="gerke.jpg" style="width:40%;"/></p>
-<p><strong>Corteva Agriscience</strong></p>
-<p><strong>Talk title: </strong>AI and Computational Biology in Corteva R&D</p>
-<p> Dr. Justin Gerke is a University of Missouri alumnus and a Senior Data Science Manager and Distinguished Laureate at Corteva Agriscience, where he leads data science and computational biology initiatives applying genomics and machine learning to agricultural innovation. The team he leads contributes analytical and modeling capabilities across both Corteva’s seed and crop protection businesses, supporting research, development, and decision‑making from early discovery through product advancement. Justin earned his undergraduate degree in Biology at the University of Missouri, where he developed a strong interest in genetics research. He went on to earn a PhD in Molecular Genetics and Genomics from the Washington University School of Medicine, studying yeast genomics. As a Life Sciences Research Foundation fellow, he expanded his genetics training at Princeton University by studying C. elegans population genomics. He later returned to crop genetics research at the University of Missouri before joining Pioneer (now Corteva) in 2011. His work has helped translate advances in genomics and data science into practical tools for agriscience innovation. </p>
-</div>
-</div>
-
-
-</div>
-</div>
-
-</div>
-```css
-/* =====================================================
-   MU–CORTEVA PLANT RESEARCH SYMPOSIUM
-   INVITED SPEAKERS THEME
-   ===================================================== */
-
+<style>
 :root{
   --orange:#E67E22;
   --orange-dark:#B85C00;
   --orange-light:#FFF5E8;
-  --gold:#F39C12;
   --text:#2D3436;
-  --gray:#666;
-  --white:#FFFFFF;
 }
 
-/* =====================================================
-   PAGE
-   ===================================================== */
-
+/* PAGE */
 body{
   font-family:"Segoe UI",Arial,sans-serif;
   background:#F8F9FA;
   color:var(--text);
-  line-height:1.8;
+  line-height:1.7;
 }
 
-.main-container{
-  max-width:1200px !important;
-}
-
-/* =====================================================
-   REMOVE OLD TOC
-   ===================================================== */
-
-#TOC,
-.tocify,
-.toc-content{
-  width:100% !important;
-  max-width:none !important;
-  padding:0 !important;
-}
-
-.tocify{
-  display:none !important;
-}
-
-.col-md-3,
-.col-sm-4{
-  display:none !important;
-}
-
-.col-md-9,
-.col-sm-8{
-  width:100% !important;
-}
-
-/* =====================================================
-   NAVBAR
-   ===================================================== */
-
+/* NAVBAR */
 .navbar-inverse{
-
-  background:
-  linear-gradient(
-    90deg,
-    #B85C00,
-    #E67E22,
-    #F39C12
-  ) !important;
-
+  background:linear-gradient(90deg,#B85C00,#E67E22,#F39C12) !important;
   border:none !important;
-
-  box-shadow:
-    0 4px 15px rgba(0,0,0,.15);
 }
-
-.navbar-inverse .navbar-brand{
-
-  color:white !important;
-
-  font-weight:700;
-
-  font-size:22px;
-}
-
+.navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav > li > a{
-
-  color:white !important;
-
+  color:#fff !important;
   font-weight:600;
 }
-
 .navbar-inverse .navbar-nav > li > a:hover{
-
-  background:rgba(255,255,255,.15);
-
+  background:rgba(255,255,255,0.15);
   border-radius:6px;
 }
 
-/* =====================================================
-   HERO
-   ===================================================== */
-
+/* HEADER */
 #header{
-
-  background:
-  linear-gradient(
-    135deg,
-    #FFF8EF,
-    #FFE7C5
-  );
-
-  padding:60px;
-
-  border-radius:24px;
-
+  background:linear-gradient(135deg,#FFF8EF,#FFE7C5);
+  padding:50px;
   text-align:center;
-
-  margin-bottom:40px;
-
-  box-shadow:
-    0 10px 30px rgba(0,0,0,.08);
+  border-radius:18px;
+  margin:20px auto 40px auto;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
 h1.title{
-
-  color:var(--orange-dark);
-
-  font-size:52px;
-
+  color:var(--orange-dark) !important;
+  font-size:48px;
   font-weight:800;
-
-  margin-bottom:10px;
 }
 
-h1{
-
-  color:var(--orange-dark);
-
-  font-weight:700;
-}
-
-h2{
-  color:var(--orange);
-}
-
-/* =====================================================
-   SPEAKER INDEX
-   ===================================================== */
-
-.speaker-index{
-
-  text-align:center;
-
-  margin:40px 0;
-}
-
-.speaker-index a{
-
-  display:inline-block;
-
-  margin:8px;
-
-  padding:10px 18px;
-
-  border-radius:30px;
-
-  background:var(--orange);
-
-  color:white !important;
-
-  text-decoration:none;
-
-  font-weight:600;
-
-  transition:.3s;
-}
-
-.speaker-index a:hover{
-
-  background:var(--orange-dark);
-
-  transform:translateY(-2px);
-}
-
-/* =====================================================
-   SPEAKER CARDS
-   ===================================================== */
-
+/* SPEAKER CARD */
 .section.level1{
-
   background:white;
-
-  padding:35px;
-
-  margin-bottom:35px;
-
-  border-radius:22px;
-
+  padding:30px;
+  margin-bottom:30px;
+  border-radius:18px;
   border-left:8px solid var(--orange);
-
-  box-shadow:
-    0 6px 25px rgba(0,0,0,.08);
-
-  transition:.3s;
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+  transition:0.3s;
 }
 
 .section.level1:hover{
-
-  transform:translateY(-4px);
-
-  box-shadow:
-    0 10px 30px rgba(0,0,0,.12);
+  transform:translateY(-3px);
+  box-shadow:0 10px 30px rgba(0,0,0,0.12);
 }
 
-/* =====================================================
-   SPEAKER IMAGES
-   ===================================================== */
-
+/* IMAGES */
 .section.level1 img{
-
-  width:260px;
-
-  height:260px;
-
+  width:240px;
+  height:240px;
   object-fit:cover;
-
-  border-radius:18px;
-
+  border-radius:16px;
   border:5px solid var(--orange);
-
   display:block;
-
-  margin:0 auto 25px auto;
+  margin:0 auto 20px auto;
 }
 
-/* =====================================================
-   AFFILIATION
-   ===================================================== */
-
-.section.level1 strong{
-
+/* TEXT STYLING */
+h1{
   color:var(--orange-dark);
 }
 
-/* =====================================================
-   TALK TITLE
-   ===================================================== */
+strong{
+  color:var(--orange-dark);
+}
 
+/* TALK TITLE */
 .talk-title{
-
   display:block;
-
   background:var(--orange-light);
-
-  padding:15px 20px;
-
-  margin:15px 0 25px 0;
-
+  padding:12px 16px;
   border-left:5px solid var(--orange);
-
-  border-radius:10px;
-
+  border-radius:8px;
   font-weight:700;
-
-  color:#444;
+  margin:10px 0 15px 0;
 }
 
-/* =====================================================
-   LINKS
-   ===================================================== */
-
+/* LINKS */
 a{
-
   color:var(--orange-dark);
-
   font-weight:600;
 }
-
 a:hover{
-
   color:var(--orange);
 }
 
-/* =====================================================
-   FOOTER
-   ===================================================== */
-
-footer{
-
-  margin-top:60px;
-
-  padding:30px;
-
-  text-align:center;
-
-  color:#777;
-
-  border-top:1px solid #ddd;
-}
-
-/* =====================================================
-   MOBILE
-   ===================================================== */
-
+/* MOBILE */
 @media(max-width:768px){
-
   #header{
-    padding:35px;
+    padding:30px;
   }
-
   h1.title{
-    font-size:34px;
+    font-size:32px;
   }
-
-  .section.level1{
-    padding:25px;
-  }
-
   .section.level1 img{
     width:100%;
     height:auto;
   }
 }
-```
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">MU Plant Research Symposium</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<div class="container">
+  <div id="header">
+    <h1 class="title">Invited Speakers</h1>
+  </div>
+
+  <!-- SPEAKERS -->
+
+  <div class="section level1">
+    <h1>Bing Yang, PhD</h1>
+    <img src="yang.jpg" />
+    <p><strong>University of Missouri, Donald Danforth Plant Science Center</strong></p>
+    <p class="talk-title">Advancements in Genetic Toolkits for Plants and Their Applications</p>
+    <p>Dr. Bing Yang is Curators’ Distinguished Professor at the University of Missouri...</p>
+  </div>
+
+  <div class="section level1">
+    <h1>Lauren Brzozowski, PhD</h1>
+    <img src="brzozowski.jpg" />
+    <p><strong>University of Kentucky</strong></p>
+    <p class="talk-title">Breeding Nutritious and Resilient Small Grains for the Mid-South</p>
+    <p>Dr. Lauren Brzozowski is an Assistant Professor of Molecular Plant Breeding & Genomics...</p>
+  </div>
+
+  <div class="section level1">
+    <h1>James Schnable, PhD</h1>
+    <img src="schnable.jpg" />
+    <p><strong>University of Nebraska-Lincoln</strong></p>
+    <p class="talk-title">Functional Genomics via Field-scale Transcriptomics</p>
+    <p>Dr. James Schnable is Nebraska Corn Checkoff Presidential Chair...</p>
+  </div>
+
+  <div class="section level1">
+    <h1>Prashant Sonawane, PhD</h1>
+    <img src="Sonawane.jpg" />
+    <p><strong>University of Missouri</strong></p>
+    <p class="talk-title">Harnessing Plant Biosynthesis and Metabolic Diversity...</p>
+    <p>Dr. Prashant Sonawane is an Assistant Professor at the University of Missouri...</p>
+  </div>
+
+  <div class="section level1">
+    <h1>Maryam Rahmati Ishka, PhD</h1>
+    <img src="rahmati.jpg" style="width:220px;" />
+    <p><strong>Eastern Illinois University</strong></p>
+    <p class="talk-title">Decoding the Genetics of Plant Response...</p>
+    <p>Dr. Maryam Rahmati Ishka studies plant developmental and environmental responses...</p>
+  </div>
+
+  <div class="section level1">
+    <h1>Justin Gerke, PhD</h1>
+    <img src="gerke.jpg" style="width:220px;" />
+    <p><strong>Corteva Agriscience</strong></p>
+    <p class="talk-title">AI and Computational Biology in Corteva R&D</p>
+    <p>Dr. Justin Gerke leads data science and computational biology initiatives at Corteva...</p>
+  </div>
+
+</div>
+
+</body>
+</html>
