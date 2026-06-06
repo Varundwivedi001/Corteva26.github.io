@@ -401,6 +401,233 @@ $(document).ready(function () {
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
+<style>
 
+/* =====================================================
+   MU-CORTEVA PLANT RESEARCH SYMPOSIUM
+   MODERN ORANGE THEME
+   ===================================================== */
+
+:root{
+  --orange:#E67E22;
+  --orange-dark:#C65D00;
+  --orange-light:#FFF4E8;
+  --gold:#F39C12;
+  --text:#2D3436;
+  --white:#FFFFFF;
+}
+
+/* -------------------------
+   GENERAL
+   ------------------------- */
+
+body{
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  background:#FAFAFA;
+  line-height:1.7;
+}
+
+.main-container{
+  max-width:1100px;
+}
+
+/* -------------------------
+   NAVBAR
+   ------------------------- */
+
+.navbar-inverse{
+  background: linear-gradient(
+    90deg,
+    var(--orange-dark),
+    var(--orange)
+  ) !important;
+
+  border:none !important;
+  box-shadow:0 3px 12px rgba(0,0,0,0.15);
+}
+
+.navbar-inverse .navbar-brand{
+  color:white !important;
+  font-size:22px;
+  font-weight:700;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+  color:white !important;
+  font-weight:600;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{
+  background:rgba(255,255,255,0.15) !important;
+  border-radius:6px;
+}
+
+/* -------------------------
+   HERO SECTION
+   ------------------------- */
+
+#header{
+  background: linear-gradient(
+    135deg,
+    #FFF6ED,
+    #FFE0B8
+  );
+
+  border-radius:18px;
+
+  padding:40px;
+  margin-bottom:35px;
+
+  text-align:center;
+
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+h1.title{
+  color:var(--orange-dark);
+  font-size:44px;
+  font-weight:800;
+  margin-bottom:15px;
+}
+
+/* -------------------------
+   HEADINGS
+   ------------------------- */
+
+h1{
+  color:var(--orange-dark);
+  font-weight:700;
+}
+
+h2{
+  color:var(--orange);
+  font-weight:700;
+}
+
+h3{
+  color:var(--orange-dark);
+}
+
+/* -------------------------
+   SECTION CARDS
+   ------------------------- */
+
+.section.level1{
+
+  background:white;
+
+  padding:25px 30px;
+
+  margin-bottom:25px;
+
+  border-radius:16px;
+
+  box-shadow:
+      0 2px 12px rgba(0,0,0,0.06);
+
+  transition:all 0.3s ease;
+}
+
+.section.level1:hover{
+  transform:translateY(-3px);
+
+  box-shadow:
+      0 8px 20px rgba(0,0,0,0.10);
+}
+
+/* -------------------------
+   LINKS
+   ------------------------- */
+
+a{
+  color:var(--orange-dark);
+  font-weight:600;
+}
+
+a:hover{
+  color:var(--orange);
+  text-decoration:none;
+}
+
+/* -------------------------
+   BUTTONS
+   ------------------------- */
+
+.btn,
+.btn-primary{
+
+  background:var(--orange) !important;
+
+  border-color:var(--orange-dark) !important;
+
+  color:white !important;
+
+  border-radius:8px;
+
+  font-weight:600;
+
+  padding:10px 18px;
+}
+
+.btn:hover,
+.btn-primary:hover{
+
+  background:var(--orange-dark) !important;
+}
+
+/* -------------------------
+   LISTS
+   ------------------------- */
+
+ul li{
+  margin-bottom:8px;
+}
+
+/* -------------------------
+   IMAGES
+   ------------------------- */
+
+img{
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* -------------------------
+   SPEAKER LIST
+   ------------------------- */
+
+#invited-speakers ul li{
+  padding:10px;
+  margin-bottom:10px;
+  background:var(--orange-light);
+  border-left:5px solid var(--orange);
+  border-radius:8px;
+}
+
+/* -------------------------
+   SPONSOR SECTION
+   ------------------------- */
+
+#sponsors{
+  background:linear-gradient(
+    135deg,
+    #FFF8F0,
+    #FFFFFF
+  );
+}
+
+/* -------------------------
+   FOOTER
+   ------------------------- */
+
+.footer{
+  text-align:center;
+  color:#777;
+  margin-top:40px;
+  padding:20px;
+}
+
+</style>
 </body>
 </html>
