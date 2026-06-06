@@ -23,6 +23,43 @@
 <link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style>
+  /* =========================
+   ORANGE NAVBAR OVERRIDE
+========================= */
+
+.navbar-inverse {
+  background: linear-gradient(135deg, #ff7a18, #ff9f40);
+  border: none;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white !important;
+  font-weight: 700;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white !important;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  background: rgba(255,255,255,0.15);
+  color: white !important;
+}
+
+.navbar-inverse .dropdown-menu {
+  border-radius: 10px;
+  border: none;
+}
+
+.navbar-inverse .dropdown-menu > li > a {
+  color: #333;
+}
+
+.navbar-inverse .dropdown-menu > li > a:hover {
+  background: #ff9f40;
+  color: white;
+}
+  
 .main-container {
   max-width: 940px;
   margin-left: auto;
